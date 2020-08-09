@@ -1,0 +1,28 @@
+Compilation time in seconds on a MacBook Air 2018 model:
+g++-10.1 -std=c++17 -Wall -Wextra -pedantic run_tests.cpp
+2.808
+2.783
+2.798
+2.822
+2.817
+2.824
+2.876
+2.854
+2.913
+2.832
+cpp17_average_time_sec = 2.8327
+
+g++-10.1 -std=c++20 -Wall -Wextra -pedantic run_tests.cpp
+3.532
+3.466
+3.496
+3.496
+3.505
+3.526
+3.556
+3.533
+3.550
+3.628
+cpp20_average_time_sec = 3.5288
+
+percent_diff = (3.5288 - 2.8327)/2.8327 * 100 = 24.57%
